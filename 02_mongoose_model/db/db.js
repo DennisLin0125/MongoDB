@@ -17,7 +17,7 @@ module.exports = function (success, error) {
     const mongoose = require("mongoose");
 
     // 導入配置文件
-    const {DB_HOST, DB_PORT, DB_NAME} = require("../config/config")
+    const {DB_HOST, DB_PORT, DB_NAME} = require("../config/config");
 
     // 連接 mongoDB
     mongoose.connect(`mongodb://${DB_HOST}:${DB_PORT}/${DB_NAME}`);
